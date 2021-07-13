@@ -24,7 +24,7 @@ class App extends Component {
         const balance = await web3.eth.getBalance(accounts[0])
         this.setState({account: accounts[0], balance: balance, web3: web3})
       } else {
-        window.alert('Please Login with MetaMask')
+        window.alert('Please Login with MetaMask.')
       }
       
       try {
@@ -34,10 +34,10 @@ class App extends Component {
         this.setState({token: token, dbank: dbank, dBankAddress: dBankAddress})
       } catch(e) {
         console.log('Error', e)
-        window.alert('Smart Contract Error')
+        window.alert('Smart Contract Error.')
       }
     } else {
-      window.alert('Please Install MetaMask')
+      window.alert('Please Install MetaMask.')
     }
   }
 
